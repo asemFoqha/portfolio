@@ -1,0 +1,78 @@
+.skills {
+    background: #000;
+    color: #fff;
+}
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills .title::before {
+    background: #fff;
+}
+.skills .title::after {
+    content: "What I know";
+    background: #000;
+}
+.skills .title {
+    color: #fff;
+}
+.skills-content .skills__right {
+    flex: 0.5;
+    min-width: 317px;
+}
+.skills-content .skills__left {
+    flex: 0.4;
+    min-width: 317px;
+}
+.persentage {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.line {
+    width: 100%;
+    height: 3px;
+    background: lightgray;
+    margin-top: 10px;
+    position: relative;
+}
+.line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: crimson;
+}
+.skills__left .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.html::before {
+    width: 90%;
+}
+.react::before {
+    width: 60%;
+}
+.js::before {
+    width: 75%;
+}
+.css::before {
+    width: 80%;
+}
+.opp::before {
+    width: 60%;
+}
+@media (max-width: 785px) {
+    .skills-content {
+        flex-direction: column;
+    }
+    .skills__right {
+        margin-top: 35px;
+    }
+}

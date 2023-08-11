@@ -1,0 +1,42 @@
+.projects-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.projects-content img {
+    max-width: 100%;
+    max-height: 600px;
+}
+.projects-content .arrows {
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 35px;
+    font-weight: 400;
+    height: 60px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    z-index: 99;
+    outline: none;
+    border: none;
+    transition: background 0.3s ease;
+}
+.projects-content .arrows:hover {
+    background: rgb(0, 0, 0, 1);
+}
+.right-arrow {
+    right: 30px;
+}
+.left-arrow {
+    left: 30px;
+}
+.projects-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}

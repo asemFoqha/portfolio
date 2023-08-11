@@ -1,0 +1,98 @@
+:root {
+    --primary-color: crimson;
+}
+.main {
+    display: flex;
+    background-color: #000;
+    background: url("../images/sec.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.main .max-width {
+    margin: auto;
+}
+
+.home-content .text-1 {
+    font-size: 27px;
+}
+.home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3;
+}
+.home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home-content span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.main .home-content a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+.main .home-content a:hover {
+    background: none;
+    color: var(--primary-color);
+}
+
+@media (max-width: 1101px) {
+    .main .max-width {
+        margin-left: 0;
+    }
+    .right {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 945px) {
+    .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home-content .text-3 {
+        font-size: 35px;
+    }
+    .main .home-content a {
+        font-size: 20px;
+        padding: 8px 22px;
+    }
+}
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 25px;
+    }
+    .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home-content .text-3 {
+        font-size: 32px;
+    }
+    .main .home-content a {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+}
+@media (max-width: 337px) {
+    .max-width {
+        padding: 0;
+    }
+}
+@media (max-width: 431px) {
+    .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home-content .text-3 {
+        font-size: 28px;
+    }
+}
