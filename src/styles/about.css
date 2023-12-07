@@ -1,114 +1,118 @@
 /* TODO: fix image shadow */
+#about-me {
+  overflow-x: hidden;
+}
+
 .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .left {
-    flex: 0.45;
+  flex: 0.45;
 }
 .right {
-    flex: 0.55;
-    min-width: 319px;
+  flex: 0.55;
+  min-width: 319px;
 }
 .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: contain;
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    box-shadow: 0px 0px 10px lightgray;
-    transition: all 0.3s ease;
+  box-shadow: 0px 0px 10px lightgray;
+  transition: all 0.3s ease;
 }
 
 .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
 }
 .title::before {
-    content: "";
-    width: 180px;
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background: #000;
+  content: "";
+  width: 180px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: #000;
 }
 .title::after {
-    content: "Who I am";
-    font-size: 20px;
-    color: crimson;
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    padding: 5px;
-    transform: translate(-50%);
-    background: #fff;
+  content: "Who I am";
+  font-size: 20px;
+  color: crimson;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  transform: translate(-50%);
+  background: #fff;
 }
 
 section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .right .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .right p {
-    text-align: justify;
+  text-align: justify;
 }
 .right a {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid var(--primary-color);
-    transition: all 0.3s ease;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
 }
 
 .right a:hover {
-    background: none;
-    color: var(--primary-color);
+  background: none;
+  color: var(--primary-color);
 }
 @media (max-width: 785px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .left {
-        margin-bottom: 30px;
-    }
-    .right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    margin-bottom: 30px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .cv-download {
-        align-self: center;
-    }
+  .cv-download {
+    align-self: center;
+  }
 }
 @media (max-width: 1200px) {
-    .left img {
-        height: 350px;
-        width: 350px;
-    }
+  .left img {
+    height: 350px;
+    width: 350px;
+  }
 }
 @media (max-width: 390px) {
-    .about .max-width {
-        padding: 0;
-    }
+  .about .max-width {
+    padding: 0;
+  }
 }
