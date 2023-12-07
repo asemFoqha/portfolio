@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../images/ana.jpeg";
-import zaid from "../data/Asem_CV.pdf";
+import zaid from "../data/Asem_Alfoqha_resume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/about.css";
